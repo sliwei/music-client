@@ -1,0 +1,23 @@
+export default function data(state = {singer: []}, action) {
+  switch (action.type) {
+    case 'USER_SINGER_FULFILLED':
+      if (action.payload.code === 200) {
+        return action.payload.data
+      } else {
+        return []
+      }
+    case 'ADD_SINGER':
+      let sta = true;
+      state.singer.map(item => {
+        if (item.singerId === action.dat.singerId && item.hash === action.dat.hash) {
+          sta = false
+        }
+      });
+      if (sta) {
+        state.singer.push(action.dat);
+        state.play = {...state.play, hash: action.dat.hash}
+      }
+      return state;
+  }
+  return state
+}
