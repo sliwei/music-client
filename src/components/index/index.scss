@@ -1,0 +1,38 @@
+@import "../../theme";
+
+.box {
+  .content {
+    height: calc(100vh - 60px);
+
+    .details {
+      float: left;
+      height: calc(100vh - 120px);
+      width: 100%;
+
+      .info {
+        width: calc(100% - 200px);
+        height: 100%;
+        overflow-y: auto;
+        overflow-x: hidden;
+        float: left;
+        transition: width .3s;
+      }
+
+      .info::-webkit-scrollbar {
+        width: 4px;
+        height: 4px;
+        background-color: #fff;
+        -webkit-border-radius: 1px;
+        -moz-border-radius: 1px;
+        border-radius: 1px;
+      }
+
+      .info::-webkit-scrollbar-thumb {
+        background-color: #ddd;
+        -webkit-border-radius: 1px;
+        -moz-border-radius: 1px;
+        border-radius: 1px;
+      }
+    }
+  }
+}
