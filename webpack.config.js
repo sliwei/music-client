@@ -31,7 +31,7 @@ const env = {
       inline: true,
       open: true,
       overlay: true,
-      port: 5001,
+      port: 8080,
       stats: {
         colors: true,
         modules: false,
