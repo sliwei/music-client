@@ -28,7 +28,7 @@ export default class Index extends React.Component {
           <div className={css.head_title_txt}>
             <span>音乐推荐</span>
             <a style={{verticalAlign: 'middle', margin: '0 20px'}}
-               href="https://i.bstu.cn/zip/吉姆音乐厅.zip">win10客户端绿色版下载</a>
+               href="https://github.com/sliwei/music-client/releases/download/0.1.0/jimuMusic-win32-x64.zip">win10客户端绿色版下载</a>
           </div>
         </div>
         {/*TODO Electron*/}
