@@ -1,6 +1,8 @@
-# music-client
+# 吉姆音乐厅
 
-> 音乐客户端
+![http://oss.bstu.cn/images/20190403/0lctopfhhe5e49tp.png](http://oss.bstu.cn/images/20190403/0lctopfhhe5e49tp.png)
+
+> 接口来自酷狗
 
 ## Dev Setup
 
