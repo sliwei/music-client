@@ -55,22 +55,6 @@ npm run ele:package:win64
 ```
 
 # 开发环境文件
-blog-manage
-  config                // 配置文件
-  src                   // 项目入口
-    api                 // api
-    assets              // 公共
-    components          // 公共模块
-    views               // 页面
-    App.vue             // 页面入口
-    main.js             // vue主入口
-    router.js           // 路由配置
-  .babelrc              // babel配置
-  .postcssrc.js         // 添加浏览器私缀配置
-  index.html            // html模板
-  package.json          // 插件配置
-  webpack.config.js     // 打包配置
-  
 music-client
   config                // 配置文件
   dist                  // 打包文件夹
@@ -110,9 +94,9 @@ music-client
 
 ```
 
-## 项目技术栈
+## 项目主要插件
 
-字段|描述
+插件名称|描述
 ----|----
 antd|UI框架
 axios|http请求
