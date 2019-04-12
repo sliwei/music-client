@@ -74,7 +74,7 @@ export default class Index extends React.Component {
           <Head menuShowSta={menuShowSta} close={this.close} {...this.props}/>
           <div className={css.details}>
             <Menu menuShowSta={menuShowSta}/>
-            <div style={{width: menuShowSta ? 'e("calc(100% - 200px)")' : '100%'}} className={css.info}>
+            <div style={{width: menuShowSta ? 'calc(100% - 200px)' : '100%'}} className={css.info}>
               <RouterSwitch>
                 <Route path="/" component={Main} exact/>
                 <Route path="/list" component={List}/>
