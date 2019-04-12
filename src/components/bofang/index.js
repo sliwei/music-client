@@ -1,5 +1,5 @@
 import React from 'react';
-import css from './bofang.scss'
+import css from './bofang.less'
 import Krc from '../krc'
 import {message} from 'antd';
 
@@ -290,7 +290,7 @@ export default class Index extends React.Component {
           <div className={css.progress_all}/>
           <div className={css.progress_start}>
             <div style={{width: `${currentTimes}%`}} className={css.progress_now}/>
-            <div style={{left: `calc(${currentTimes}% - 10px)`}} ref="currentTimeIcon"
+            <div style={{left: `e("calc(${currentTimes}% - 10px)")`}} ref="currentTimeIcon"
                  className={css.progress_img}>
               <i onMouseDown={this.down} className="iconfont icon-yuan"/>
             </div>

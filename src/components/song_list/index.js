@@ -1,7 +1,7 @@
 import React from 'react';
 import {op} from 'Api/op';
 import {connect} from 'react-redux';
-import css from './song_list.scss'
+import css from './song_list.less'
 
 import playAction from '../../actions/playAction'
 

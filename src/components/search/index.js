@@ -1,7 +1,7 @@
 import React from 'react';
 import {op} from 'Api/op';
 import {connect} from 'react-redux';
-import css from './search.scss'
+import css from './search.less'
 import playAction from '../../actions/playAction'
 
 @connect(state => {

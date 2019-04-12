@@ -1,7 +1,7 @@
 import React from 'react';
 import {op} from 'Api/op';
 import {Link} from 'react-router-dom'
-import css from './main.scss'
+import css from './main.less'
 import BannerAnim, {Element} from 'rc-banner-anim';
 import TweenOne from 'rc-tween-one';
 import 'rc-banner-anim/assets/index.css';

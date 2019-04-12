@@ -21,7 +21,7 @@
     //0 0 5px #000; /*右边阴影*/
     i.logo {
       font-size: 24px;
-      color: $thenme_color1;
+      color: @theme;
       vertical-align: middle;
       margin: 0 25px;
     }
@@ -36,13 +36,13 @@
     }
 
     i:hover {
-      color: $thenme_color1;
+      color: @theme;
     }
   }
 
   .head {
     -webkit-app-region: drag;
-    width: calc(100% - 200px);
+    width: e("calc(100% - 200px)");
     height: 60px;
     border-bottom: 1px solid #ddd;
     box-sizing: border-box;
@@ -50,7 +50,7 @@
 
     .head_title {
       height: 100%;
-      width: calc(100% - 100px);
+      width: e("calc(100% - 100px)");
       display: inline-block;
       float: left;
 
@@ -71,13 +71,13 @@
         }
 
         i:hover {
-          color: $thenme_color1;
+          color: @theme;
         }
       }
 
       .head_title_txt {
         height: 100%;
-        width: calc(100% - 100px);
+        width: e("calc(100% - 100px)");
         display: inline-block;
         float: left;
         line-height: 60px;

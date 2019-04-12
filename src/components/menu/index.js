@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
-import css from './menu.scss'
+import css from './menu.less'
 import config from '../../config'
 import Search from '../search/min'
 

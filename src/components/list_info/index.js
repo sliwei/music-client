@@ -2,7 +2,7 @@ import React from 'react';
 import {op} from 'Api/op';
 import {connect} from 'react-redux';
 import {withRouter} from 'react-router'
-import css from './list_info.scss'
+import css from './list_info.less'
 import playAction from '../../actions/playAction'
 
 @connect(state => {

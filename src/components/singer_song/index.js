@@ -1,7 +1,7 @@
 import React from 'react';
 import {op} from 'Api/op';
 import {withRouter} from 'react-router'
-import css from './singer_song.scss'
+import css from './singer_song.less'
 
 export default class Index extends React.Component {
   constructor(props) {
@@ -32,13 +32,13 @@ export default class Index extends React.Component {
     //     return Promise.reject(err);
     // });
 
-    op({url: 'http://m.kugou.com/plist/index?json=true'}).then(ret => {
-      this.setState({plist: ret.data.plist})
-    })
-    // op({url: `http://m.kugou.com/singer/info/?singerid=${singerid}&page=${page}&json=true`}).then(ret => {
-    //     // console.log(ret);
-    //     this.setState({songs: ret.data.songs, info: ret.data.info})
+    // op({url: 'http://m.kugou.com/plist/index?json=true'}).then(ret => {
+    //   this.setState({plist: ret.data.plist})
     // })
+    op({url: `http://m.kugou.com/singer/info/?singerid=${singerid}&page=${page}&json=true`}).then(ret => {
+        // console.log(ret);
+        // this.setState({songs: ret.data.songs, info: ret.data.info})
+    })
   };
 
   add = (dat) => {
@@ -62,6 +62,7 @@ export default class Index extends React.Component {
           </li>
         })}
       </ul>
+      <p style={{textAlign: 'center'}}>未获取到列表</p>
     </div>;
   }
 }

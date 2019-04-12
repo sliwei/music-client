@@ -1,5 +1,5 @@
 import React from 'react';
-import css from './search.scss'
+import css from './search.less'
 
 export default class Index extends React.Component {
   constructor(props) {

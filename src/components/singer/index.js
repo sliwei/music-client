@@ -1,7 +1,7 @@
 import React from 'react';
 import {op} from 'Api/op';
 import {Link} from 'react-router-dom'
-import css from './singer.scss'
+import css from './singer.less'
 
 export default class Index extends React.Component {
   constructor(props) {
