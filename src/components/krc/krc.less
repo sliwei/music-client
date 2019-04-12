@@ -11,7 +11,7 @@
     position: absolute;
     bottom: 60px;
     left: 0;
-    height: calc(100vh - 120px);
+    height: e("calc(100vh - 120px)");
     width: 100%;
     background-color: #fff;
     transition: all .5s;
@@ -45,12 +45,12 @@
       }
 
       i:hover {
-        color: $danger;
+        color: @danger;
       }
     }
 
     .krc_box {
-      height: calc(100% - 46px);
+      height: e("calc(100% - 46px)");
       position: relative;
 
       .krc_box_info {

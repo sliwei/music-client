@@ -1,5 +1,5 @@
 import React from 'react';
-import css from './comment.scss'
+import css from './comment.less'
 
 export default class Index extends React.Component {
   constructor(props) {
@@ -7,8 +7,9 @@ export default class Index extends React.Component {
   }
 
   render() {
-    return <div className={css.comment}>
-      this comment
+    return <div style={{textAlign: 'center'}}>
+      <br/>
+      -- no more --
     </div>;
   }
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import {op} from 'Api/op';
-import css from './krc.scss'
+import css from './krc.less'
 import Comment from '../comment'
 
 export default class Index extends React.Component {
@@ -21,7 +21,7 @@ export default class Index extends React.Component {
   }
 
   getKrc = (dat) => {
-    op({url: `http://m.kugou.com/app/i/krc.php?cmd=100&keyword=${dat.fileName}&hash=${dat.hash}&timelength=${dat.timeLength * 1000}&d=0.5557390969886549`}).then(ret => {
+    op({url: `http://m.kugou.com/app/i/krc.php?cmd=100&keyword=${dat.fileName}&hash=${dat.hash}&timelength=${dat.timeLength * 1000}&d=0.1240665855436298`}).then(ret => {
       let krc = ret.data, krcBase = [];
       krc = krc.split('[');
       krc.map(item => {
